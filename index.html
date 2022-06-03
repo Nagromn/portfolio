@@ -13,15 +13,14 @@
 
 <body class="d-flex flex-column h-100">
       <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-md navbar-light">
                   <div class="container-fluid">
-                        <a class="nav-link active" aria-current="page" href="#">Logo</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false"
-                              aria-label="Toggle navigation">
+                              data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                              aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="navbar-collapse collapse justify-content-center" id="navbarsExample06">
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
                               <ul class="nav nav-pills" id="pills-tab" role="tablist">
                                     <li class="nav-item" role="presentation">
                                           <button class="nav-link active" id="pills-presentation-tab"
@@ -34,7 +33,7 @@
                                           <button class="nav-link" id="pills-skill-tab" data-bs-toggle="pill"
                                                 data-bs-target="#pills-skill" type="button" role="tab"
                                                 aria-controls="pills-skill" aria-selected="false">
-                                                Mes compétences
+                                                Compétences
                                           </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
@@ -48,14 +47,14 @@
                                           <button class="nav-link" id="pills-projects-tab" data-bs-toggle="pill"
                                                 data-bs-target="#pills-projects" type="button" role="tab"
                                                 aria-controls="pills-projects" aria-selected="false">
-                                                Mes réalisations
+                                                Réalisations
                                           </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                           <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
                                                 data-bs-target="#pills-contact" type="button" role="tab"
                                                 aria-controls="pills-contact" aria-selected="false">
-                                                Me contacter
+                                                Contact
                                           </button>
                                     </li>
                               </ul>
@@ -316,10 +315,10 @@
                                                 <div class="accordion" id="accordionPanelsStayOpenExample">
                                                       <div class="accordion-item">
                                                             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                                                  <button class="accordion-button" type="button"
-                                                                        data-bs-toggle="collapse"
+                                                                  <button class="accordion-button collapsed"
+                                                                        type="button" data-bs-toggle="collapse"
                                                                         data-bs-target="#panelsStayOpen-collapseOne"
-                                                                        aria-expanded="true"
+                                                                        aria-expanded="false"
                                                                         aria-controls="panelsStayOpen-collapseOne">
                                                                         <span
                                                                               class="text-danger fw-bolder px-2">2022</span><span>&nbsp;</span>
@@ -327,7 +326,7 @@
                                                                   </button>
                                                             </h2>
                                                             <div id="panelsStayOpen-collapseOne"
-                                                                  class="accordion-collapse collapse show"
+                                                                  class="accordion-collapse collapse"
                                                                   aria-labelledby="panelsStayOpen-headingOne">
                                                                   <div class="accordion-body">
                                                                         <h4 class="py-3 text-center">
@@ -550,58 +549,665 @@
                                     </div>
                               </div>
                         </div>
-                        <!-- <div class="row mt-3">
-                        Back to top area
-                        <a class="d-flex justify-content-center bg-primary text-light text-decoration-none rounded py-3" href="#">Retourner en haut <i class="bi bi-arrow-up px-2"></i></a>
-                        </div> -->
+
                         <!-- Projects -->
                         <div class="tab-pane fade" id="pills-projects" role="tabpanel"
                               aria-labelledby="pills-projects-tab">
                               <h2 class="text-center mb-5">Réalisations</h2>
-                              <h3 class="text-center">En cours</h3>
-                              <!-- <div class="row row-cols-1 row-cols-md-3 g-4">
-                                    <div class="col">
-                                          <div class="card h-100">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                      <h5 class="card-title">Card title</h5>
-                                                      <p class="card-text">This is a longer card with supporting text
-                                                            below as a natural lead-in to additional content. This
-                                                            content is a little bit longer.</p>
+                              <div class="container d-flex justify-content-center">
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                          <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill"
+                                                      data-bs-target="#pills-all" type="button" role="tab"
+                                                      aria-controls="pills-all" aria-selected="true">Tout</button>
+                                          </li>
+                                          <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-frontend-tab" data-bs-toggle="pill"
+                                                      data-bs-target="#pills-frontend" type="button" role="tab"
+                                                      aria-controls="pills-frontend"
+                                                      aria-selected="false">Intégration</button>
+                                          </li>
+                                          <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-backend-tab" data-bs-toggle="pill"
+                                                      data-bs-target="#pills-backend" type="button" role="tab"
+                                                      aria-controls="pills-backend"
+                                                      aria-selected="false">Développement</button>
+                                          </li>
+                                    </ul>
+                              </div>
+                              <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
+                                          aria-labelledby="pills-all-tab" tabindex="0">
+                                          <div class="container d-flex justify-content-center">
+                                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                                      <!-- CHIFUMI -->
+                                                      <div class="col">
+                                                            <div class="card">
+                                                                  <img src="assets/img/myProjects/chifumi/chifumi.png"
+                                                                        class="card-img-top" alt="Chifumi">
+                                                                  <div class="card-body">
+                                                                        <img src="./assets/img/logo/HTML_5.svg"
+                                                                              class="img m-2 icons" alt="HTML logo" />
+                                                                        <img src="./assets/img/logo/CSS.3.svg"
+                                                                              class="img m-2 icons" alt="CSS logo" />
+                                                                        <img src="./assets/img/logo/JS.svg"
+                                                                              class="img m-2 icons"
+                                                                              alt="Javascript logo" />
+                                                                        <h5 class="card-title text-danger mt-1">Chifumi
+                                                                              Minecraft Edition
+                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                              Projet réaliser dans le cadre de ma
+                                                                              formation d'intégration web.
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <!-- CUP OF TEA -->
+                                                      <div class="col">
+                                                            <div class="card">
+                                                                  <div id="carouselExampleIndicators"
+                                                                        class="carousel slide" data-bs-ride="true">
+                                                                        <div class="carousel-indicators">
+                                                                              <button type="button"
+                                                                                    data-bs-target="#carouselExampleIndicators"
+                                                                                    data-bs-slide-to="0"
+                                                                                    class="active bg-danger"
+                                                                                    aria-current="true"
+                                                                                    aria-label="Slide 1"></button>
+                                                                              <button type="button"
+                                                                                    data-bs-target="#carouselExampleIndicators"
+                                                                                    data-bs-slide-to="1"
+                                                                                    class="bg-danger"
+                                                                                    aria-label="Slide 2"></button>
+                                                                              <button type="button"
+                                                                                    data-bs-target="#carouselExampleIndicators"
+                                                                                    data-bs-slide-to="2"
+                                                                                    class="bg-danger"
+                                                                                    aria-label="Slide 3"></button>
+                                                                              <button type="button"
+                                                                                    data-bs-target="#carouselExampleIndicators"
+                                                                                    data-bs-slide-to="3"
+                                                                                    class="bg-danger"
+                                                                                    aria-label="Slide 4"></button>
+                                                                              <button type="button"
+                                                                                    data-bs-target="#carouselExampleIndicators"
+                                                                                    data-bs-slide-to="4"
+                                                                                    class="bg-danger"
+                                                                                    aria-label="Slide 5"></button>
+                                                                        </div>
+                                                                        <div class="carousel-inner">
+                                                                              <div class="carousel-item active">
+                                                                                    <img src="assets/img/myProjects/cup-of-tea/cup-of-tea_home.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Cup of Tea Home">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/cup-of-tea/cup-of-tea_home2.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Cup of tea Home 2">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/cup-of-tea/cup-of-tea_product-list.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Cup of tea Product List">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/cup-of-tea/cup-of-tea_product-list2.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Cup of tea Product List 2">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/cup-of-tea/cup-of-tea_about.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Cup of tea About">
+                                                                              </div>
+                                                                        </div>
+                                                                        <button class="carousel-control-prev"
+                                                                              type="button"
+                                                                              data-bs-target="#carouselExampleIndicators"
+                                                                              data-bs-slide="prev">
+                                                                              <span class="carousel-control-prev-icon bg-danger rounded"
+                                                                                    aria-hidden="true"></span>
+                                                                              <span
+                                                                                    class="visually-hidden">Previous</span>
+                                                                        </button>
+                                                                        <button class="carousel-control-next"
+                                                                              type="button"
+                                                                              data-bs-target="#carouselExampleIndicators"
+                                                                              data-bs-slide="next">
+                                                                              <span class="carousel-control-next-icon bg-danger rounded"
+                                                                                    aria-hidden="true"></span>
+                                                                              <span class="visually-hidden">Next</span>
+                                                                        </button>
+                                                                  </div>
+                                                                  <div class="card-body">
+                                                                        <img src="./assets/img/logo/HTML_5.svg"
+                                                                              class="img m-2 icons" alt="HTML logo" />
+                                                                        <img src="./assets/img/logo/CSS.3.svg"
+                                                                              class="img m-2 icons" alt="CSS logo" />
+                                                                        <img src="./assets/img/logo/JS.svg"
+                                                                              class="img m-2 icons"
+                                                                              alt="Javascript logo" />
+                                                                        <h5 class="card-title text-danger mt-1">Cup of
+                                                                              Tea
+                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                              Projet réaliser dans le cadre de ma
+                                                                              formation d'intégration web. Site
+                                                                              e-commerce de vente de thé.
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <!-- PIZZERIA -->
+                                                      <div class="col">
+                                                            <div class="card">
+                                                                  <div id="carouselPizzeriaIndicators"
+                                                                        class="carousel slide" data-bs-ride="true">
+                                                                        <div class="carousel-indicators">
+                                                                              <button type="button"
+                                                                                    class="active bg-danger"
+                                                                                    data-bs-target="#carouselPizzeriaIndicators"
+                                                                                    data-bs-slide-to="0"
+                                                                                    aria-current="true"
+                                                                                    aria-label="Slide 1"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselPizzeriaIndicators"
+                                                                                    data-bs-slide-to="1"
+                                                                                    aria-label="Slide 2"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselPizzeriaIndicators"
+                                                                                    data-bs-slide-to="2"
+                                                                                    aria-label="Slide 3"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselPizzeriaIndicators"
+                                                                                    data-bs-slide-to="3"
+                                                                                    aria-label="Slide 4"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselPizzeriaIndicators"
+                                                                                    data-bs-slide-to="4"
+                                                                                    aria-label="Slide 5"></button>
+                                                                        </div>
+                                                                        <div class="carousel-inner">
+                                                                              <div class="carousel-item active">
+                                                                                    <img src="assets/img/myProjects/pizzeria/pizzeria_home.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Pizzeria Home">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/pizzeria/pizzeria_home2.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Pizzeria Home 2">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/pizzeria/pizzeria_details.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Pizzeria Product Details">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/pizzeria/pizzeria_details2.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Pizzeria Product Details 2">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/pizzeria/pizzeria_cart.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Pizzeria Cart">
+                                                                              </div>
+                                                                        </div>
+                                                                        <button class="carousel-control-prev"
+                                                                              type="button"
+                                                                              data-bs-target="#carouselPizzeriaIndicators"
+                                                                              data-bs-slide="prev">
+                                                                              <span class="carousel-control-prev-icon bg-danger rounded"
+                                                                                    aria-hidden="true"></span>
+                                                                              <span
+                                                                                    class="visually-hidden">Previous</span>
+                                                                        </button>
+                                                                        <button class="carousel-control-next"
+                                                                              type="button"
+                                                                              data-bs-target="#carouselPizzeriaIndicators"
+                                                                              data-bs-slide="next">
+                                                                              <span class="carousel-control-next-icon bg-danger rounded"
+                                                                                    aria-hidden="true"></span>
+                                                                              <span class="visually-hidden">Next</span>
+                                                                        </button>
+                                                                  </div>
+                                                                  <div class="card-body">
+                                                                        <img src="./assets/img/logo/Php.svg"
+                                                                              class="img m-2 icons" alt="Php logo" />
+                                                                        <img src="./assets/img/logo/Symfony.svg"
+                                                                              class="img m-2 icons"
+                                                                              alt="Symfony logo" />
+                                                                        <h5 class="card-title text-danger mt-1">Pizzeria
+                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                              Projet réaliser dans le cadre de ma
+                                                                              formation d'intégration et développement
+                                                                              web. Site
+                                                                              e-commerce de vente de pizza réalisé sous
+                                                                              Symfony 5.
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <!-- PROJECT JAM -->
+                                                      <div class="col">
+                                                            <div class="card">
+                                                                  <div id="carouselProjectJamIndicators"
+                                                                        class="carousel slide" data-bs-ride="true">
+                                                                        <div class="carousel-indicators">
+                                                                              <button type="button"
+                                                                                    class="active bg-danger"
+                                                                                    data-bs-target="#carouselProjectJamIndicators"
+                                                                                    data-bs-slide-to="0"
+                                                                                    aria-current="true"
+                                                                                    aria-label="Slide 1"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselProjectJamIndicators"
+                                                                                    data-bs-slide-to="1"
+                                                                                    aria-label="Slide 2"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselProjectJamIndicators"
+                                                                                    data-bs-slide-to="2"
+                                                                                    aria-label="Slide 3"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselProjectJamIndicators"
+                                                                                    data-bs-slide-to="3"
+                                                                                    aria-label="Slide 4"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselProjectJamIndicators"
+                                                                                    data-bs-slide-to="4"
+                                                                                    aria-label="Slide 5"></button>
+                                                                        </div>
+                                                                        <div class="carousel-inner">
+                                                                              <div class="carousel-item active">
+                                                                                    <img src="assets/img/myProjects/project_jam/project_jam-home.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="ProjectJam Home">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/project_jam/project_jam-addProduct.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="ProjectJam addProduct">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/project_jam/project_jam-addProduct2.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="ProjectJam addProduct 2">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/project_jam/project_jam-favoritePage.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="ProjectJam Favorite">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/project_jam/project_jam-productPage.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="ProjectJam productPage">
+                                                                              </div>
+                                                                        </div>
+                                                                        <button class="carousel-control-prev"
+                                                                              type="button"
+                                                                              data-bs-target="#carouselProjectJamIndicators"
+                                                                              data-bs-slide="prev">
+                                                                              <span class="carousel-control-prev-icon bg-danger rounded"
+                                                                                    aria-hidden="true"></span>
+                                                                              <span
+                                                                                    class="visually-hidden">Previous</span>
+                                                                        </button>
+                                                                        <button class="carousel-control-next"
+                                                                              type="button"
+                                                                              data-bs-target="#carouselProjectJamIndicators"
+                                                                              data-bs-slide="next">
+                                                                              <span class="carousel-control-next-icon bg-danger rounded"
+                                                                                    aria-hidden="true"></span>
+                                                                              <span class="visually-hidden">Next</span>
+                                                                        </button>
+                                                                  </div>
+                                                                  <div class="card-body">
+                                                                        <img src="./assets/img/logo/Php.svg"
+                                                                              class="img m-2 icons" alt="Php logo" />
+                                                                        <h5 class="card-title text-danger mt-1">Project
+                                                                              Jam
+                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                              Projet final réalisé dans le cadre de ma
+                                                                              fin de formation d'intégration et
+                                                                              développement
+                                                                              web. Site
+                                                                              de petites annonces entre particulier
+                                                                              spécialisé dans le hightech.
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
                                                 </div>
                                           </div>
                                     </div>
-                                    <div class="col">
-                                          <div class="card h-100">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                      <h5 class="card-title">Card title</h5>
-                                                      <p class="card-text">This is a short card.</p>
+
+                                    <!-- FRONT-END -->
+                                    <div class="tab-pane fade" id="pills-frontend" role="tabpanel"
+                                          aria-labelledby="pills-frontend-tab" tabindex="0">
+                                          <div class="container d-flex justify-content-center">
+                                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                                      <!-- CHIFUMI -->
+                                                      <div class="col">
+                                                            <div class="card">
+                                                                  <img src="assets/img/myProjects/chifumi/chifumi.png"
+                                                                        class="card-img-top" alt="Chifumi">
+                                                                  <div class="card-body">
+                                                                        <img src="./assets/img/logo/HTML_5.svg"
+                                                                              class="img m-2 icons" alt="HTML logo" />
+                                                                        <img src="./assets/img/logo/CSS.3.svg"
+                                                                              class="img m-2 icons" alt="CSS logo" />
+                                                                        <img src="./assets/img/logo/JS.svg"
+                                                                              class="img m-2 icons"
+                                                                              alt="Javascript logo" />
+                                                                        <h5 class="card-title text-danger mt-1">Chifumi
+                                                                              Minecraft Edition
+                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                              Projet réaliser dans le cadre de ma
+                                                                              formation d'intégration web.
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <!-- CUP OF TEA -->
+                                                      <div class="col">
+                                                            <div class="card">
+                                                                  <div id="carouselExampleIndicators"
+                                                                        class="carousel slide" data-bs-ride="true">
+                                                                        <div class="carousel-indicators">
+                                                                              <button type="button"
+                                                                                    data-bs-target="#carouselExampleIndicators"
+                                                                                    data-bs-slide-to="0"
+                                                                                    class="active bg-danger"
+                                                                                    aria-current="true"
+                                                                                    aria-label="Slide 1"></button>
+                                                                              <button type="button"
+                                                                                    data-bs-target="#carouselExampleIndicators"
+                                                                                    data-bs-slide-to="1"
+                                                                                    class="bg-danger"
+                                                                                    aria-label="Slide 2"></button>
+                                                                              <button type="button"
+                                                                                    data-bs-target="#carouselExampleIndicators"
+                                                                                    data-bs-slide-to="2"
+                                                                                    class="bg-danger"
+                                                                                    aria-label="Slide 3"></button>
+                                                                              <button type="button"
+                                                                                    data-bs-target="#carouselExampleIndicators"
+                                                                                    data-bs-slide-to="3"
+                                                                                    class="bg-danger"
+                                                                                    aria-label="Slide 4"></button>
+                                                                              <button type="button"
+                                                                                    data-bs-target="#carouselExampleIndicators"
+                                                                                    data-bs-slide-to="4"
+                                                                                    class="bg-danger"
+                                                                                    aria-label="Slide 5"></button>
+                                                                        </div>
+                                                                        <div class="carousel-inner">
+                                                                              <div class="carousel-item active">
+                                                                                    <img src="assets/img/myProjects/cup-of-tea/cup-of-tea_home.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Cup of Tea Home">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/cup-of-tea/cup-of-tea_home2.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Cup of tea Home 2">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/cup-of-tea/cup-of-tea_product-list.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Cup of tea Product List">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/cup-of-tea/cup-of-tea_product-list2.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Cup of tea Product List 2">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/cup-of-tea/cup-of-tea_about.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Cup of tea About">
+                                                                              </div>
+                                                                        </div>
+                                                                        <button class="carousel-control-prev"
+                                                                              type="button"
+                                                                              data-bs-target="#carouselExampleIndicators"
+                                                                              data-bs-slide="prev">
+                                                                              <span class="carousel-control-prev-icon bg-danger rounded"
+                                                                                    aria-hidden="true"></span>
+                                                                              <span
+                                                                                    class="visually-hidden">Previous</span>
+                                                                        </button>
+                                                                        <button class="carousel-control-next"
+                                                                              type="button"
+                                                                              data-bs-target="#carouselExampleIndicators"
+                                                                              data-bs-slide="next">
+                                                                              <span class="carousel-control-next-icon bg-danger rounded"
+                                                                                    aria-hidden="true"></span>
+                                                                              <span class="visually-hidden">Next</span>
+                                                                        </button>
+                                                                  </div>
+                                                                  <div class="card-body">
+                                                                        <img src="./assets/img/logo/HTML_5.svg"
+                                                                              class="img m-2 icons" alt="HTML logo" />
+                                                                        <img src="./assets/img/logo/CSS.3.svg"
+                                                                              class="img m-2 icons" alt="CSS logo" />
+                                                                        <img src="./assets/img/logo/JS.svg"
+                                                                              class="img m-2 icons"
+                                                                              alt="Javascript logo" />
+                                                                        <h5 class="card-title text-danger mt-1">Cup of
+                                                                              Tea
+                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                              Projet réaliser dans le cadre de ma
+                                                                              formation d'intégration web. Site
+                                                                              e-commerce de vente de thé.
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
                                                 </div>
                                           </div>
                                     </div>
-                                    <div class="col">
-                                          <div class="card h-100">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                      <h5 class="card-title">Card title</h5>
-                                                      <p class="card-text">This is a longer card with supporting text
-                                                            below as a natural lead-in to additional content.</p>
+
+                                    <!-- BACK-END -->
+                                    <div class="tab-pane fade" id="pills-backend" role="tabpanel"
+                                          aria-labelledby="pills-backend-tab" tabindex="0">
+                                          <div class="container d-flex justify-content-center">
+                                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                                      <!-- PIZZERIA -->
+                                                      <div class="col">
+                                                            <div class="card">
+                                                                  <div id="carouselPizzeria2Indicators"
+                                                                        class="carousel slide" data-bs-ride="true">
+                                                                        <div class="carousel-indicators">
+                                                                              <button type="button"
+                                                                                    class="active bg-danger"
+                                                                                    data-bs-target="#carouselPizzeria2Indicators"
+                                                                                    data-bs-slide-to="0"
+                                                                                    aria-current="true"
+                                                                                    aria-label="Slide 1"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselPizzeria2Indicators"
+                                                                                    data-bs-slide-to="1"
+                                                                                    aria-label="Slide 2"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselPizzeria2Indicators"
+                                                                                    data-bs-slide-to="2"
+                                                                                    aria-label="Slide 3"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselPizzeria2Indicators"
+                                                                                    data-bs-slide-to="3"
+                                                                                    aria-label="Slide 4"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselPizzeria2Indicators"
+                                                                                    data-bs-slide-to="4"
+                                                                                    aria-label="Slide 5"></button>
+                                                                        </div>
+                                                                        <div class="carousel-inner">
+                                                                              <div class="carousel-item active">
+                                                                                    <img src="assets/img/myProjects/pizzeria/pizzeria_home.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Pizzeria Home">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/pizzeria/pizzeria_home2.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Pizzeria Home 2">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/pizzeria/pizzeria_details.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Pizzeria Product Details">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/pizzeria/pizzeria_details2.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Pizzeria Product Details 2">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/pizzeria/pizzeria_cart.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="Pizzeria Cart">
+                                                                              </div>
+                                                                        </div>
+                                                                        <button class="carousel-control-prev"
+                                                                              type="button"
+                                                                              data-bs-target="#carouselPizzeria2Indicators"
+                                                                              data-bs-slide="prev">
+                                                                              <span class="carousel-control-prev-icon bg-danger rounded"
+                                                                                    aria-hidden="true"></span>
+                                                                              <span
+                                                                                    class="visually-hidden">Previous</span>
+                                                                        </button>
+                                                                        <button class="carousel-control-next"
+                                                                              type="button"
+                                                                              data-bs-target="#carouselPizzeria2Indicators"
+                                                                              data-bs-slide="next">
+                                                                              <span class="carousel-control-next-icon bg-danger rounded"
+                                                                                    aria-hidden="true"></span>
+                                                                              <span class="visually-hidden">Next</span>
+                                                                        </button>
+                                                                  </div>
+                                                                  <div class="card-body">
+                                                                        <img src="./assets/img/logo/Php.svg"
+                                                                              class="img m-2 icons" alt="Php logo" />
+                                                                        <img src="./assets/img/logo/Symfony.svg"
+                                                                              class="img m-2 icons"
+                                                                              alt="Symfony logo" />
+                                                                        <h5 class="card-title text-danger mt-1">Pizzeria
+                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                              Projet réaliser dans le cadre de ma
+                                                                              formation d'intégration et développement
+                                                                              web. Site
+                                                                              e-commerce de vente de pizza réalisé sous
+                                                                              Symfony 5.
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <!-- PROJECT JAM -->
+                                                      <div class="col">
+                                                            <div class="card">
+                                                                  <div id="carouselProjectJam2Indicators"
+                                                                        class="carousel slide" data-bs-ride="true">
+                                                                        <div class="carousel-indicators">
+                                                                              <button type="button"
+                                                                                    class="active bg-danger"
+                                                                                    data-bs-target="#carouselProjectJam2Indicators"
+                                                                                    data-bs-slide-to="0"
+                                                                                    aria-current="true"
+                                                                                    aria-label="Slide 1"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselProjectJam2Indicators"
+                                                                                    data-bs-slide-to="1"
+                                                                                    aria-label="Slide 2"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselProjectJam2Indicators"
+                                                                                    data-bs-slide-to="2"
+                                                                                    aria-label="Slide 3"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselProjectJam2Indicators"
+                                                                                    data-bs-slide-to="3"
+                                                                                    aria-label="Slide 4"></button>
+                                                                              <button type="button" class="bg-danger"
+                                                                                    data-bs-target="#carouselProjectJam2Indicators"
+                                                                                    data-bs-slide-to="4"
+                                                                                    aria-label="Slide 5"></button>
+                                                                        </div>
+                                                                        <div class="carousel-inner">
+                                                                              <div class="carousel-item active">
+                                                                                    <img src="assets/img/myProjects/project_jam/project_jam-home.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="ProjectJam Home">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/project_jam/project_jam-addProduct.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="ProjectJam addProduct">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/project_jam/project_jam-addProduct2.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="ProjectJam addProduct 2">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/project_jam/project_jam-favoritePage.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="ProjectJam Favorite">
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                    <img src="assets/img/myProjects/project_jam/project_jam-productPage.png"
+                                                                                          class="d-block w-100"
+                                                                                          alt="ProjectJam productPage">
+                                                                              </div>
+                                                                        </div>
+                                                                        <button class="carousel-control-prev"
+                                                                              type="button"
+                                                                              data-bs-target="#carouselProjectJam2Indicators"
+                                                                              data-bs-slide="prev">
+                                                                              <span class="carousel-control-prev-icon bg-danger rounded"
+                                                                                    aria-hidden="true"></span>
+                                                                              <span
+                                                                                    class="visually-hidden">Previous</span>
+                                                                        </button>
+                                                                        <button class="carousel-control-next"
+                                                                              type="button"
+                                                                              data-bs-target="#carouselProjectJam2Indicators"
+                                                                              data-bs-slide="next">
+                                                                              <span class="carousel-control-next-icon bg-danger rounded"
+                                                                                    aria-hidden="true"></span>
+                                                                              <span class="visually-hidden">Next</span>
+                                                                        </button>
+                                                                  </div>
+                                                                  <div class="card-body">
+                                                                        <img src="./assets/img/logo/Php.svg"
+                                                                              class="img m-2 icons" alt="Php logo" />
+                                                                        <h5 class="card-title text-danger mt-1">Project
+                                                                              Jam
+                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                              Projet final réalisé dans le cadre de ma
+                                                                              fin de formation d'intégration et
+                                                                              développement
+                                                                              web. Site
+                                                                              de petites annonces entre particulier
+                                                                              spécialisé dans le hightech.
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
                                                 </div>
                                           </div>
                                     </div>
-                                    <div class="col">
-                                          <div class="card h-100">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                      <h5 class="card-title">Card title</h5>
-                                                      <p class="card-text">This is a longer card with supporting text
-                                                            below as a natural lead-in to additional content. This
-                                                            content is a little bit longer.</p>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div> -->
+                              </div>
                         </div>
 
                         <!-- Contact -->
